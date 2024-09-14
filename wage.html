@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Wage Calculator | Wage Page</title>
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Google Fonts Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Header Area -->
+    <header class="header fixed-top custom__shadow--sm">
+      <div class="container">
+        <nav>
+          <a href="#" class="nav__logo">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+        </nav>
+      </div>
+    </header>
+    <!-- Header Area -->
+
+    <!-- Main Content -->
+    <main>
+      <!-- Wage Area -->
+      <section class="wage-area">
+        <div class="container">
+          <div class="wage">
+            <div class="wage__header">
+              <h1 class="font--24">Wage Calculator</h1>
+
+              <!-- Dropdown Button -->
+              <div class="dropdown custom__dropdown">
+                <button
+                  class="btn btn-secondary custom__dropdown-btn"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Share to
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu--social">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/facebook.svg" alt="" />
+                      <span>Facebook</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/x-icon.svg" alt="" />
+                      <span>X</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/linkedIn.svg" alt="" />
+                      <span>LinkedIn</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/mail.svg" alt="" />
+                      <span>Mail to</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/link.svg" alt="" />
+                      <span>Copy link</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Dropdown Button -->
+            </div>
+
+            <div class="wage__form-chart">
+              <!-- Wage Form -->
+              <div class="wage__form custom__shadow--md">
+                <form action="">
+                  <div class="input__items">
+                    <!-- Single Input -->
+                    <div class="input__item">
+                      <p class="input__item-title">
+                        Current job <img src="images/help.svg" alt="help" />
+                      </p>
+
+                      <select
+                        class="form-select form-select--current"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Food Service Worker</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <!-- Single Input -->
+
+                    <!-- Single Input -->
+                    <div class="input__item">
+                      <p class="input__item-title">
+                        Destination job <img src="images/help.svg" alt="help" />
+                      </p>
+
+                      <select
+                        class="form-select form-select--destination"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Wastewater Technician</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <!-- Single Input -->
+                  </div>
+                </form>
+              </div>
+              <!-- Wage Form -->
+
+              <!-- Wage Chart -->
+              <div class="wage__chart">
+                <h2>Wage Chart</h2>
+              </div>
+              <!-- Wage Chart -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Wage Area -->
+
+      <!-- Wage Map Area -->
+      <section class="wage-map-area">
+        <div class="container">
+          <div class="wage-map">
+            <div class="wage-map__content">
+              <h2 class="font--36">
+                Now that you've uncovered the economic impact of entering the
+                water industry, take the next step with our Water Utility Career
+                Map.
+              </h2>
+
+              <p class="font--24">
+                Explore diverse roles in the water industry from entry to senior
+                levels and discover the skills, training, and certifications
+                needed to advance your career.
+              </p>
+
+              <a href="#" class="custom__btn custom__btn--outline"
+                >Get started</a
+              >
+            </div>
+
+            <div class="wage-map__image">
+              <img src="images/wage-map.png" alt="map" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Wage Map Area -->
+    </main>
+    <!-- Main Content -->
+
+    <!-- JS Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
