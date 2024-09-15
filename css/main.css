@@ -174,6 +174,17 @@ h6 {
   background: #0085a6;
 }
 
+.custom__btn--lg {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 33px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
 .custom__btn--outline {
   background: transparent;
   font-size: 16px;
@@ -205,6 +216,45 @@ h6 {
   border-color: #000;
   outline: 0;
   box-shadow: none;
+}
+
+.form-check {
+  margin-bottom: 0;
+}
+
+.form-switch {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-switch label {
+  cursor: pointer;
+}
+
+.form-switch .form-check-input {
+  width: 44px;
+  height: 24px;
+  margin-top: 0;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #005a70;
+  border-color: #005a70;
+}
+
+.form-check-label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #344054;
+}
+
+.form-check-input:active {
+  filter: brightness(100%);
 }
 
 /* Default CSS Code */
@@ -484,6 +534,7 @@ main {
 }
 
 .dropdown-menu {
+  border: none;
   padding: 24px 32px;
   flex-direction: column;
   gap: 12px;
@@ -533,8 +584,9 @@ main {
   margin-top: 20px;
   max-width: 1208px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  align-items: flex-start;
   gap: 24px;
 }
 
@@ -550,7 +602,8 @@ main {
   -o-border-radius: 8px;
 }
 
-.input__item-title {
+.input__item-title,
+.salary__card-title {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -585,6 +638,158 @@ main {
   flex-direction: column;
   gap: 27px;
 }
+
+.wage__form .custom__btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 130px;
+}
+
+.wage__chart {
+  flex: 1;
+}
+
+/* Wage Tab */
+
+.nav-tabs,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-color: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background: #313d4f;
+  color: #fff;
+}
+
+.nav-tabs .nav-link {
+  background: #f9fafb;
+  color: #475467;
+  border-color: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 11px 21px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+
+.tab-content {
+  background: #313d4f;
+  padding: 20px 32px;
+  padding-bottom: 38px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-top-left-radius: 0;
+}
+
+.tab-pane p {
+  color: #fff;
+}
+
+.salary-tab__desc {
+  max-width: 700px;
+}
+
+.salary-tab__desc a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+
+.salary__card-title {
+  font-weight: 600;
+  color: #344054;
+  margin-bottom: 0;
+}
+
+.salary-tab__content {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.salary-chart-area {
+  flex: 1;
+  background: #fff;
+  padding: 24px 18px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.salary-highlight-area {
+  width: 100%;
+  max-width: 301px;
+  background: #fff;
+  padding: 24px;
+  padding-right: 30px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.salary__card-title img {
+  width: 16px;
+  height: 16px;
+}
+
+.salary-chart {
+  margin-top: 32px;
+  height: 279px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.salary-chart img {
+  object-fit: contain;
+}
+
+.salary-highlight__items {
+  margin-top: 16px;
+}
+
+.salary-highlight__items p {
+  color: #344054;
+  margin-bottom: 15px;
+}
+
+.salary-highlight__items p:last-of-type {
+  margin-bottom: 0;
+}
+
+.salary-highlight__items p a {
+  display: inline;
+  color: #276969;
+  font-weight: 700;
+}
+
+.salary-highlight__items p a:hover {
+  text-decoration: underline;
+}
+
+.salary-highlight__items p span {
+  font-weight: 700;
+}
+
+/* Wage Tab */
 
 /* Wage Map Area */
 

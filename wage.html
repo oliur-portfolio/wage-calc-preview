@@ -143,14 +143,187 @@
                       </select>
                     </div>
                     <!-- Single Input -->
+
+                    <!-- Single Input -->
+                    <div class="input__item">
+                      <p class="input__item-title">
+                        Include benefits in total compensation?
+                        <img src="images/help.svg" alt="help" />
+                      </p>
+
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input custom-switch shadow-none"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckChecked"
+                          checked
+                        />
+
+                        <label
+                          class="form-check-label"
+                          for="flexSwitchCheckChecked"
+                          >on</label
+                        >
+                      </div>
+                    </div>
+                    <!-- Single Input -->
                   </div>
+
+                  <button class="custom__btn custom__btn--lg">Submit</button>
                 </form>
               </div>
               <!-- Wage Form -->
 
               <!-- Wage Chart -->
               <div class="wage__chart">
-                <h2>Wage Chart</h2>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-tab-pane"
+                      aria-selected="true"
+                    >
+                      Salary Differential Over Time
+                    </button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-tab-pane"
+                      aria-selected="false"
+                    >
+                      Salary Progression Over Time
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                    tabindex="0"
+                  >
+                    <p class="salary-tab__desc">
+                      This chart compares the wage differences between an origin
+                      job and a destination job within the water industry.
+                      <a href="#">See more details</a>
+                    </p>
+
+                    <div class="salary-tab__content">
+                      <div class="salary-chart-area">
+                        <h3 class="salary__card-title font--16">
+                          Salary Progression Over Time
+                          <img src="images/help.svg" alt="help" />
+                        </h3>
+
+                        <div class="salary-chart">
+                          <img
+                            src="images/differential-chart.png"
+                            alt="differential chart"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="salary-highlight-area">
+                        <h3 class="salary__card-title font--16">Highlights</h3>
+
+                        <div class="salary-highlight__items">
+                          <p class="font--14">
+                            In the next <span>5</span> years, you will earn
+                            <span>$133,848</span> more in the
+                            <a href="#">Wastewater Technician</a> role compared
+                            to your current job.
+                          </p>
+
+                          <p class="font--14">
+                            In the next <span>10</span> years, you will earn
+                            <span>$321,474</span> more in the
+                            <a href="#">Wastewater Technician</a> role compared
+                            to your current job.
+                          </p>
+
+                          <p class="font--14">
+                            In the next <span>15</span> years, you will earn
+                            <span>$580,410</span> more in the
+                            <a href="#">Wastewater Technician</a> role compared
+                            to than your current job.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="profile-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                    tabindex="0"
+                  >
+                    <p class="salary-tab__desc">
+                      This chart compares the projected salary growth over 15
+                      years between an origin job and a destination job in the
+                      water industry.
+                      <a href="#">See more details</a>
+                    </p>
+
+                    <div class="salary-tab__content">
+                      <div class="salary-chart-area">
+                        <h3 class="salary__card-title font--16">
+                          Salary Progression Over Time
+                          <img src="images/help.svg" alt="help" />
+                        </h3>
+
+                        <div class="salary-chart">
+                          <img
+                            src="images/progression-chart.png"
+                            alt="progression chart"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="salary-highlight-area">
+                        <h3 class="salary__card-title font--16">Highlights</h3>
+
+                        <div class="salary-highlight__items">
+                          <p class="font--14">
+                            At <span>year 5</span>, the salary in the
+                            <a href="#">Wastewater Technician</a> role is
+                            <span>$35,837</span> higher than in your current
+                            job.
+                          </p>
+
+                          <p class="font--14">
+                            At <span>year 10</span>, the salary in the
+                            <a href="#">Wastewater Technician</a> role is
+                            <span>$53,568</span> higher than in your current
+                            job.
+                          </p>
+
+                          <p class="font--14">
+                            At year <span>15</span>, the salary in the
+                            <a href="#">Wastewater Technician</a> role is
+                            <span>$78,189</span> higher than in your current
+                            job.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Wage Chart -->
             </div>
