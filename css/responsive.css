@@ -1,8 +1,283 @@
 @media (max-width: 1750.98px) {
+  .wage-path-area {
+    overflow: hidden;
+  }
+
+  .wage-path__line {
+    left: -70px;
+  }
 }
 
 @media (max-width: 1199.98px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero__content {
+    max-width: 528px;
+    text-align: center;
+  }
+
+  .hero__content .custom__btn {
+    margin-top: 30px;
+  }
+
+  .comparison {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .comparison__item img {
+    max-width: 650px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+
+  .comparison__item p {
+    min-height: auto;
+  }
+
+  .wage-path-calculator {
+    padding-right: 0;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .wage-path-calculator--career {
+    padding-left: 0;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+  }
+
+  .wage-path-calculator__content h2 {
+    max-width: 100%;
+  }
+
+  .wage-path__line {
+    display: none;
+  }
+
+  .wage-path-area {
+    padding: 80px 0;
+  }
+
+  .wage__form-chart {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .wage__form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wage-map {
+    flex-direction: column;
+  }
+
+  .wage-map-area {
+    padding: 80px 0;
+  }
+
+  .wage-map__content p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .wage__form {
+    width: 100%;
+  }
+
+  .salary-tab__content {
+    flex-direction: column;
+  }
+
+  .salary-highlight-area {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767.98px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    padding: 0 40px;
+  }
+
+  .nav__logo {
+    width: 67px;
+    height: 25px;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+
+  .header .container {
+    padding: 0 16px;
+  }
+
+  main {
+    margin-top: 65px;
+  }
+
+  .hero__content .custom__btn {
+    margin-top: 24px;
+  }
+
+  .hero-area .container {
+    padding: 0 25px;
+  }
+
+  .hero {
+    gap: 60px;
+  }
+
+  .hero__content h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .hero__content-desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .comparison-area {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  .comparison__item h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .wage-path-calculator__content h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .wage-path-calculator {
+    gap: 32px;
+  }
+
+  .wage-path-calculator--career {
+    margin-top: 64px;
+  }
+
+  .wage-path-area {
+    padding: 40px 0;
+  }
+
+  .discover__content .custom__btn {
+    margin-top: 32px;
+  }
+
+  .discover {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .discover__content h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .wage-map-area {
+    padding: 40px 0;
+  }
+
+  .wage-map__content h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .wage-map__content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .wage-map__content .custom__btn {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wage-map {
+    gap: 32px;
+  }
+
+  .tab-content {
+    padding: 20px 16px;
+    padding-bottom: 24px;
+  }
+
+  .salary-tab__desc {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .salary-chart--mobile {
+    display: block;
+  }
+
+  .salary-chart--desktop {
+    display: none;
+  }
+
+  .salary__card-title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .salary-tab__content {
+    margin-top: 24px;
+  }
+
+  .nav-tabs .nav-link {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 12px;
+    text-align: left;
+  }
+
+  .nav-tabs .nav-item {
+    width: 156px;
+  }
+
+  .custom__dropdown-wage--desktop {
+    display: none;
+  }
+
+  .custom__dropdown-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .custom__dropdown-btn img {
+    width: 18px;
+    height: 20px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .dropdown-menu li {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

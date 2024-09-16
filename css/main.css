@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -138,7 +138,7 @@ h6 {
   display: none !important;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1340px) {
   .container,
   .container-lg,
   .container-md,
@@ -210,12 +210,19 @@ h6 {
 
 .form-select {
   padding: 9px 14px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
 }
 
 .form-select:focus {
   border-color: #000;
   outline: 0;
   box-shadow: none;
+}
+
+.form-select option {
+  color: #000;
 }
 
 .form-check {
@@ -288,7 +295,7 @@ body {
 
 /* Header area */
 .header {
-  padding: 20px 0;
+  padding: 18.5px 0;
   z-index: 9999;
   background: #fff;
 }
@@ -302,22 +309,27 @@ body {
   object-fit: contain;
 }
 
+.navbar {
+  display: flex;
+}
+
 /* Header area */
 
 main {
-  margin-top: 135px;
+  margin-top: 127px;
 }
 
 /* Hero Area */
 
 .hero-area {
-  padding: 80px 0;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 
 .hero {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 65px;
   width: 100%;
   max-width: 1168px;
 }
@@ -369,7 +381,7 @@ main {
 .comparison {
   display: flex;
   align-items: flex-start;
-  gap: 104px;
+  gap: 135px;
 }
 
 .comparison__item {
@@ -430,6 +442,7 @@ main {
 
 .wage-path-calculator__video {
   max-width: 671px;
+  width: 100%;
 }
 
 .wage-path-calculator__content h3 {
@@ -503,6 +516,10 @@ main {
 .custom__dropdown-btn {
   font-size: 16px;
   line-height: 24px;
+}
+
+.custom__dropdown-wage--mobile {
+  display: none;
 }
 
 .custom__dropdown-btn,
@@ -627,10 +644,6 @@ main {
 .form-select--destination:focus {
   color: #276969;
   font-weight: 500;
-}
-
-.form-select option {
-  color: #000;
 }
 
 .input__items {
@@ -762,6 +775,10 @@ main {
   object-fit: contain;
 }
 
+.salary-chart--mobile {
+  display: none;
+}
+
 .salary-highlight__items {
   margin-top: 16px;
 }
@@ -819,6 +836,7 @@ main {
 
 .wage-map__content h2 {
   color: #b1ebc0;
+  font-weight: 600;
 }
 
 .wage-map__content p {
