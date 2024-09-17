@@ -251,7 +251,7 @@
   }
 
   .nav-tabs .nav-item {
-    width: 156px;
+    flex: 1;
   }
 
   .custom__dropdown-wage--desktop {
@@ -279,5 +279,48 @@
     width: 100px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .input__item-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .input__item--benefits {
+    display: flex;
+  }
+
+  .input__item--benefits .input__item-title {
+    margin-bottom: 0;
+  }
+
+  .input__item-title button {
+    width: 16px;
+    height: 16px;
+    top: 3px;
+  }
+
+  .salary__card-title button {
+    top: 4px;
+  }
+
+  .wage__form .custom__btn {
+    margin-top: 28px;
+  }
+
+  .modal-dialog {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .custom__modal-body {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+  }
+
+  .chart__modal-descs p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }

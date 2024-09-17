@@ -119,6 +119,11 @@ h6 {
   line-height: 30px;
 }
 
+.font--18 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .font--16 {
   font-size: 16px;
   line-height: 24px;
@@ -296,7 +301,7 @@ body {
 /* Header area */
 .header {
   padding: 18.5px 0;
-  z-index: 9999;
+  z-index: 99;
   background: #fff;
 }
 
@@ -621,17 +626,23 @@ main {
 
 .input__item-title,
 .salary__card-title {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  display: block;
   color: #344054;
   font-weight: 500;
   margin-bottom: 6px;
 }
 
-.input__item-title img {
+.input__item-title {
+  display: block;
+}
+
+.input__item-title button {
   width: 20px;
   height: 20px;
+  margin-left: 3px;
+  display: inline;
+  position: relative;
+  top: 5px;
 }
 
 .form-select--current,
@@ -714,13 +725,13 @@ main {
   max-width: 700px;
 }
 
-.salary-tab__desc a {
+.salary-tab__desc button {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
   font-weight: 600;
   color: #fff;
-  text-decoration: underline;
-  margin-left: 8px;
+  margin-left: 5px;
+  border-bottom: 1px solid #fff;
 }
 
 .salary__card-title {
@@ -759,9 +770,13 @@ main {
   -o-border-radius: 12px;
 }
 
-.salary__card-title img {
+.salary__card-title button {
   width: 16px;
   height: 16px;
+  margin-left: 3px;
+  display: inline;
+  position: relative;
+  top: 3px;
 }
 
 .salary-chart {
@@ -850,5 +865,76 @@ main {
 }
 
 /* Wage Map Area */
+
+/* Modal Area */
+.custom__modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 14px;
+  padding-bottom: 10px;
+}
+
+.modal-dialog {
+  max-width: 655px;
+}
+
+.modal-content {
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.custom__modal-body {
+  padding-left: 32px;
+  padding-right: 57px;
+  padding-bottom: 36px;
+}
+
+.modal__close-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.chart__modal-descs p,
+.chart__modal-descs p a {
+  color: #475467;
+}
+
+.chart__modal-descs p a {
+  text-decoration: underline;
+}
+
+.chart__modal-descs p {
+  margin-bottom: 12px;
+}
+
+.chart__modal-descs p:last-of-type {
+  margin-bottom: 0;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: #fff;
+  --bs-tooltip-color: #475467;
+  background: #fff;
+  opacity: 1;
+  padding: 12px;
+  z-index: 99;
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  box-shadow: 5px 5px 40px 1px rgba(16, 24, 40, 0.15);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* Modal Area */
 
 /* Wage Page */

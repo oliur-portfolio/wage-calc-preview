@@ -31,6 +31,106 @@
   </head>
 
   <body>
+    <!-- Modal Area -->
+    <div class="modal-area">
+      <!-- Single Modal -->
+      <div
+        class="modal fade"
+        id="chartDifferentialModal"
+        tabindex="-1"
+        aria-labelledby="chartDifferentialModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="custom__modal-header">
+              <button
+                class="modal__close-btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="images/cross.svg" alt="cross" />
+              </button>
+            </div>
+
+            <div class="custom__modal-body">
+              <div class="chart__modal-descs">
+                <p class="font--18">
+                  This chart illustrates salary progression based on an assumed
+                  3% annual growth rate for your current job and a 5% growth
+                  rate for entry-level roles in the water industry.
+                </p>
+
+                <p class="font--18">
+                  Please note that these projections do not account for
+                  potential salary increases through promotions within the
+                  industry.
+                </p>
+
+                <p class="font--18">
+                  To explore how your salary growth could be even greater
+                  through career advancement, check out the
+                  <a href="https://twt.careerpathplatform.com/map/"
+                    >Water Utility Career Map.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Single Modal -->
+
+      <!-- Single Modal -->
+      <div
+        class="modal fade"
+        id="chartProgressionModal"
+        tabindex="-1"
+        aria-labelledby="chartProgressionModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="custom__modal-header">
+              <button
+                class="modal__close-btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <img src="images/cross.svg" alt="cross" />
+              </button>
+            </div>
+
+            <div class="custom__modal-body">
+              <div class="chart__modal-descs">
+                <p class="font--18">
+                  This chart illustrates salary progression based on an assumed
+                  3% annual growth rate for your current job and a 5% growth
+                  rate for entry-level roles in the water industry.
+                </p>
+
+                <p class="font--18">
+                  Please note that these projections do not account for
+                  potential salary increases through promotions within the
+                  industry.
+                </p>
+
+                <p class="font--18">
+                  To explore how your salary growth could be even greater
+                  through career advancement, check out the
+                  <a href="https://twt.careerpathplatform.com/map/"
+                    >Water Utility Career Map.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Single Modal -->
+    </div>
+    <!-- Modal Area -->
+
     <!-- Header Area -->
     <header class="header fixed-top custom__shadow--sm">
       <div class="container">
@@ -113,7 +213,17 @@
                     <!-- Single Input -->
                     <div class="input__item">
                       <p class="input__item-title">
-                        Current job <img src="images/help.svg" alt="help" />
+                        Current job
+
+                        <button
+                          type="button"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="right"
+                          data-bs-custom-class="custom-tooltip"
+                          data-bs-title="Select a representative current job."
+                        >
+                          <img src="images/help.svg" alt="help" />
+                        </button>
                       </p>
 
                       <select
@@ -131,7 +241,16 @@
                     <!-- Single Input -->
                     <div class="input__item">
                       <p class="input__item-title">
-                        Destination job <img src="images/help.svg" alt="help" />
+                        Destination job
+                        <button
+                          type="button"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="right"
+                          data-bs-custom-class="custom-tooltip"
+                          data-bs-title="Select a destination job in the water industry."
+                        >
+                          <img src="images/help.svg" alt="help" />
+                        </button>
                       </p>
 
                       <select
@@ -147,10 +266,19 @@
                     <!-- Single Input -->
 
                     <!-- Single Input -->
-                    <div class="input__item">
+                    <div class="input__item input__item--benefits">
                       <p class="input__item-title">
                         Include benefits in total compensation?
-                        <img src="images/help.svg" alt="help" />
+
+                        <button
+                          type="button"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="right"
+                          data-bs-custom-class="custom-tooltip"
+                          data-bs-title="Choose whether to  include the value of benefits in total compensation. Benefits include 401(k) contributions, healthcare and dental coverage, valued at a total of 20% of salary."
+                        >
+                          <img src="images/help.svg" alt="help" />
+                        </button>
                       </p>
 
                       <div class="form-check form-switch">
@@ -221,14 +349,28 @@
                     <p class="salary-tab__desc">
                       This chart compares the wage differences between an origin
                       job and a destination job within the water industry.
-                      <a href="#">See more details</a>
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#chartDifferentialModal"
+                      >
+                        See more details
+                      </button>
                     </p>
 
                     <div class="salary-tab__content">
                       <div class="salary-chart-area">
                         <h3 class="salary__card-title font--16">
                           Salary Progression Over Time
-                          <img src="images/help.svg" alt="help" />
+                          <button
+                            type="button"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="right"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="The future value of wages is calculated using a formula that reflects an annual growth rate of the current and destination job selected."
+                          >
+                            <img src="images/help.svg" alt="help" />
+                          </button>
                         </h3>
 
                         <div class="salary-chart">
@@ -286,14 +428,28 @@
                       This chart compares the projected salary growth over 15
                       years between an origin job and a destination job in the
                       water industry.
-                      <a href="#">See more details</a>
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#chartProgressionModal"
+                      >
+                        See more details
+                      </button>
                     </p>
 
                     <div class="salary-tab__content">
                       <div class="salary-chart-area">
                         <h3 class="salary__card-title font--16">
                           Salary Progression Over Time
-                          <img src="images/help.svg" alt="help" />
+                          <button
+                            type="button"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="right"
+                            data-bs-custom-class="custom-tooltip"
+                            data-bs-title="The future value of wages is calculated using a formula that reflects an annual growth rate of the current and destination job selected."
+                          >
+                            <img src="images/help.svg" alt="help" />
+                          </button>
                         </h3>
 
                         <div class="salary-chart">
@@ -434,5 +590,6 @@
 
     <!-- JS Files -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
